@@ -13,7 +13,7 @@ pipelineJob('k8s-deploy') {
       scm {
         git {
           remote {
-            credentials('Madhav_Github_Credentials')
+            credentials('madhav_github_credentials')
             url(repo)
           }
           branch('master')
@@ -38,7 +38,7 @@ pipelineJob('image-orchestrator-job') {
       scm {
         git {
           remote {
-            credentials('Madhav_Github_Credentials')
+            credentials('madhav_github_credentials')
             url(repo)
           }
           branch('master')
@@ -62,7 +62,7 @@ pipelineJob('app-mono-build-job') {
       scm {
         git {
           remote {
-            credentials('Madhav_Github_Credentials')
+            credentials('madhav_github_credentials')
             url(repo)
           }
           branch('master')
